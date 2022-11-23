@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'd:\wsd\my_code\database\success.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_success_form(object):
+    def setupUi(self, success_form):
+        success_form.setObjectName("success_form")
+        success_form.resize(300, 150)
+        success_form.setMinimumSize(QtCore.QSize(300, 150))
+        success_form.setMaximumSize(QtCore.QSize(300, 150))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        success_form.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Agency FB")
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        success_form.setFont(font)
+        success_form.setAcceptDrops(False)
+        self.verticalLayout = QtWidgets.QVBoxLayout(success_form)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.widget = QtWidgets.QWidget(success_form)
+        font = QtGui.QFont()
+        font.setFamily("宋体")
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.widget.setFont(font)
+        self.widget.setObjectName("widget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+        self.horizontalLayout.setContentsMargins(-1, -1, 2, -1)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.success_ico = QtWidgets.QLabel(self.widget)
+        self.success_ico.setMaximumSize(QtCore.QSize(70, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.success_ico.setFont(font)
+        self.success_ico.setText("")
+        self.success_ico.setObjectName("success_ico")
+        self.horizontalLayout.addWidget(self.success_ico)
+        self.success_tip = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.success_tip.setFont(font)
+        self.success_tip.setText("")
+        self.success_tip.setObjectName("success_tip")
+        self.horizontalLayout.addWidget(self.success_tip)
+        self.verticalLayout.addWidget(self.widget)
+        self.widget_2 = QtWidgets.QWidget(success_form)
+        self.widget_2.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.widget_2.setObjectName("widget_2")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.widget_2)
+        self.horizontalLayout_2.setContentsMargins(-1, 5, -1, 5)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.confirm_butt = QtWidgets.QPushButton(self.widget_2)
+        self.confirm_butt.setMaximumSize(QtCore.QSize(60, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setStyleStrategy(QtGui.QFont.PreferAntialias)
+        self.confirm_butt.setFont(font)
+        self.confirm_butt.setIconSize(QtCore.QSize(15, 20))
+        self.confirm_butt.setObjectName("confirm_butt")
+        self.horizontalLayout_2.addWidget(self.confirm_butt)
+        self.verticalLayout.addWidget(self.widget_2)
+
+        self.retranslateUi(success_form)
+        QtCore.QMetaObject.connectSlotsByName(success_form)
+
+    def retranslateUi(self, success_form):
+        _translate = QtCore.QCoreApplication.translate
+        success_form.setWindowTitle(_translate("success_form", "提示"))
+        self.confirm_butt.setText(_translate("success_form", "确认"))
